@@ -23,6 +23,7 @@ class LeerNotas {
 			String linea;
 			while ((linea = br.readLine()) != null){
 				nota=linea.substring((linea.length()-3), linea.length());
+				//"NP" se puede sustituir por cualquier palabra que queramos tratar en el .txt
 				if(nota.contains("NP")){
 					System.out.println(linea);
 					System.out.println(" -> No presentado nº "+np);
@@ -31,6 +32,7 @@ class LeerNotas {
 				else
 				{
 					System.out.println(linea);
+					//Con el método paseDouble(String) convierte el string que pasamos por parámetro a double
 					vNota=Double.parseDouble(nota);
 					suma=suma+vNota;
 					System.out.println(" -> Nota: "+vNota+", Nota Ac.: "+suma);
