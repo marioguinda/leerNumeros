@@ -17,7 +17,6 @@ class LeerNotas {
 		String nombreArchivo = sc.nextLine();
 		
 		try {
-			//Ruta: I:\\Programas\\EclipsePortable\\Data\\workspace\\lecturaEscritura\\src\\
 			archivo = new File(ruta+nombreArchivo);
 			fr = new FileReader(archivo);
 			br = new BufferedReader(fr);
